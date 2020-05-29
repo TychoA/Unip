@@ -6,9 +6,9 @@ require_once 'Assertions/IsString.php';
 require_once 'Assertions/IsBoolean.php';
 
 
-class MyTestCase extends TestCase
+class MyTestCase extends Unip\TestCase
 {
-    use Assertions\IsString;
+    use Unip\Assertions\IsString;
 
     private $myvariable = 'foobar';
 
@@ -18,9 +18,9 @@ class MyTestCase extends TestCase
     }
 }
 
-class FailedTestCase extends TestCase
+class FailedTestCase extends Unip\TestCase
 {
-    use Assertions\IsBoolean;
+    use Unip\Assertions\IsBoolean;
 
     private $myvariable = "foobar";
 
@@ -30,7 +30,7 @@ class FailedTestCase extends TestCase
     }
 }
 
-$suite = new TestSuite();
+$suite = new Unip\TestSuite();
 
 $suite->add(new MyTestCase());
 $suite->add(new FailedTestCase());

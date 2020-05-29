@@ -1,4 +1,11 @@
 <?php
-namespace Assertions;
+/**
+ *  Namespace.
+ */
+namespace Unip\Assertions;
 
+/**
+ *  Class definition.
+ *  @extends    \Exception
+ */
 class Error extends \Exception {}

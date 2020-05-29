@@ -1,5 +1,13 @@
 <?php
 
+/**
+ *  Namespace.
+ */
+namespace Unip;
+
+/**
+ *  Class definition.
+ */
 class TestCase
 {
     /**
@@ -19,11 +27,14 @@ class TestCase
      */
     private function getTests() : array
     {
-        $reflection = new ReflectionClass($this);
-        $methods = $reflection->getMethods(ReflectionMethod::IS_PUBLIC);
+        $reflection = new \ReflectionClass($this);
+        $methods = $reflection->getMethods(\ReflectionMethod::IS_PUBLIC);
 
+        // extract all method names and expose them
         return array_map(function($method) {
             return $method->getName(); 
+
+        // only get methods that start with "should"
         }, array_filter($methods, function($method) {
             return substr($method->getName(), 0, 6) == "should";
         }));
