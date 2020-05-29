@@ -1,4 +1,10 @@
 <?php
+/**
+ *  Class to add define a set of tests, which can be run, and added to a suite.
+ *
+ *  @author     Tycho Atsma <tycho.atsma@gmail.com>
+ *  @copyright  Tycho Atsma
+ */
 
 /**
  *  Namespace.

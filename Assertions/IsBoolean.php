@@ -1,5 +1,12 @@
 <?php
 /**
+ *  Trait for asserting variables for boolean values.
+ *
+ *  @author     Tycho Atsma <tycho.atsma@gmail.com>
+ *  @copyright  Tycho Atsma
+ */
+
+/**
  *  Namespace.
  */
 namespace Unip\Assertions;

@@ -1,4 +1,10 @@
 <?php
+/**
+ *  Class to add test cases and run them.
+ *
+ *  @author     Tycho Atsma <tycho.atsma@gmail.com>
+ *  @copyright  Tycho Atsma
+ */
 
 /**
  *  Namespace.
