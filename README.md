@@ -4,7 +4,7 @@ Small and simple library for unit testing in php7.
 ## Philosophy
 It is build around the idea of having a easy way to manage unit tests. 
 And horizontal inheritance of assertion functionality, which can be
-integrated into test cases.
+integrated into test cases. It is inspired by pythons `unittest` package.
 
 ## Method
 A test suite can contain a number of test cases (might add suites in the future).
