@@ -14,7 +14,7 @@ namespace Unip;
 /**
  *  Class definition.
  */
-class TestCase
+abstract class TestCase
 {
     /**
      *  Method to run all tests that belong to this test case. Each test is
